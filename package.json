@@ -1,0 +1,36 @@
+{
+  "name": "aws-health-to-chime",
+  "version": "0.0.1",
+  "description": "Send AWS Health events to Amazon Chime",
+  "main": "app.js",
+  "repository": "https://github.com/poretti/aws-health-to-chime",
+  "author": "Michael Poretti",
+  "license": "MIT",
+  "bin": {
+    "cdk": "dist/bin/cdk.js"
+  },
+  "scripts": {
+    "clean": "rm -r dist",
+    "build": "npm run clean && tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.20.0",
+    "@types/jest": "^24.0.22",
+    "@types/node": "10.17.5",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "aws-cdk": "^1.20.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.20.0",
+    "@aws-cdk/core": "^1.20.0",
+    "@types/aws-lambda": "^8.10.39",
+    "aws-lambda": "^1.0.5",
+    "source-map-support": "^0.5.16"
+  }
+}
